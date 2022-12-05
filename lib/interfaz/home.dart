@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:get/get.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:reto4/controlador/controladorgeneral.dart';
 import 'package:reto4/interfaz/listar.dart';
 import 'package:reto4/peticiones/peticionesBD.dart';
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Location',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.cyan,
       ),
       debugShowCheckedModeBanner: false,
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'GPS KAME'),
     );
   }
 }
@@ -43,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget.title ,style: GoogleFonts.acme(),),
         actions: [
           IconButton(
               onPressed: () {
@@ -52,10 +53,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         title: "ATENCIÖN!!!",
                         desc:
                             "Esta seguro que deea eliminar TODAS las ubicaciones.",
+                        
                         buttons: [
                           DialogButton(
                               color: Colors.green,
-                              child: Text("SI"),
+                              child: Text("SI", style: GoogleFonts.acme()),
                               onPressed: () {
                                 peticionesBD.EliminarTodos();
                                 Control.CargarBDtotal();
@@ -63,15 +65,16 @@ class _MyHomePageState extends State<MyHomePage> {
                               }),
                           DialogButton(
                               color: Colors.red,
-                              child: Text("NO"),
+                              child: Text("NO", style: GoogleFonts.acme()),
                               onPressed: () {
                                 Navigator.pop(context);
                               })
                         ],
                         context: context)
                     .show();
+                    
               },
-              icon: Icon(Icons.delete_forever_outlined))
+              icon: Icon(Icons.delete_forever_outlined,color: Colors.red))
         ],
       ),
       body: listar(),
