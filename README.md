@@ -1,16 +1,28 @@
-# reto4
+# Reto_4_ MINTIC_Equipo_10
 
-A new Flutter project.
+##  Técnologías, librerías o herramientas que se usaron:
+- Flutter
+- get: ^4.6.5
+- Dart
+- flutter pub add google_fonts
+- firebase_auth: ^4.1.3
+- firebase_core: ^2.3.0
+- cloud_firestore: ^4.1.0
+- rflutter_alert
+- geolocator 
 
-## Getting Started
+*******
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+##  Demo
+-  GPS KAME <br>
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- [Clic aquí para ver el demo](https://youtube.com/shorts/apuMnmvDmaQ)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+##  Créditos 
+### Dearrollado por:
+-   <h3>Yuly Marcela Beltrán</h3>
+-   <h3>Katherine Moreno Ordoñez</h3>
+-   <h3> Elia Amira López Olivera </h3>
+-   <h3>Alexander Ceballos Quintero</h3>
+
